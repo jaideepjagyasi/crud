@@ -7,29 +7,30 @@
     <a href="index.php">Home</a>
     <br/><br/>
  
-    <form action="add.php" method="post" name="form1">
+    <form action="" method="post" name="form1" id="addForm">
         <table width="25%" border="0">
             <tr> 
                 <td>Name</td>
-                <td><input type="text" name="name"></td>
+                <td><input type="text" name="name" id="name"></td>
             </tr>
             <tr> 
                 <td>Age</td>
-                <td><input type="text" name="age"></td>
+                <td><input type="text" name="age" id="age"></td>
             </tr>
             <tr> 
                 <td>Email</td>
-                <td><input type="text" name="email"></td>
+                <td><input type="email" name="email" id="email"></td>
             </tr>
             <tr> 
                 <td>Number</td>
-                <td><input type="text" name="number"></td>
+                <td><input type="text" name="number" id="number"></td>
             </tr>
             <tr> 
                 <td></td>
-                <td><input type="submit" name="Submit" value="Add"></td>
+                <td><input type="submit" name="Submit" value="Add" onclick="validateData();"></td>
             </tr>
         </table>
     </form>
+    <script src="js/main.js"></script>
 </body>
 </html>
